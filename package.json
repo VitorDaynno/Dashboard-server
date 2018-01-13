@@ -1,0 +1,26 @@
+{
+  "name": "dashboard-server",
+  "version": "1.0.0",
+  "description": " ",
+  "main": "server.js",
+  "scripts": {
+    "test": "istanbul cover --reporter=html ./node_modules/mocha/bin/_mocha -- -R spec --recursive",
+    "start": "node server.js"
+  },
+  "author": "Vítor Daynno",
+  "license": "",
+  "repository": "https://github.com/VitorDaynno/Dashboard-server",
+  "dependencies": {
+    "express": "4.16.2",
+    "express-load": "1.1.16",
+    "method-override": "2.3.10",
+    "mongoose": "5.0.0-rc1",
+    "winston": "2.4.0"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "istanbul": "0.4.5",
+    "mocha": "4.1.0",
+    "supertest": "3.0.0"
+  }
+}
