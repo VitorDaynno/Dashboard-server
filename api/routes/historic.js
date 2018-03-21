@@ -3,4 +3,4 @@ module.exports = function(app) {
 
     app.route('/v1/historic')
         .get(controller.getThirty);
-}
+};

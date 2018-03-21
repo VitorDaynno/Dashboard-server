@@ -6,10 +6,9 @@ var appSettings = require('./settings');
 
 module.exports = function () {
     var app = express();
-    
     app.set('port', appSettings.servicePort);
 
-    app.use(bodyParser.urlencoded({ extended: true}));
+    app.use(bodyParser.urlencoded({extended: true}));
     app.use(bodyParser.json());
     app.use(require('method-override')());
 
@@ -20,11 +19,11 @@ module.exports = function () {
         next();
     });
 
-    load('controllers', { cwd: 'api' })
+    load('controllers', {cwd: 'api'})
         .then('routes')
         .into(app);
 
     console.log('app');
 
     return app;
-;}
+};

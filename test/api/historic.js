@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
-var request     = require('supertest');
-var chai        = require('chai');
-var expect      = chai.expect;
+var request  = require('supertest');
+var chai     = require('chai');
+var expect   = chai.expect;
 
 describe('historic', function(){
     var server;
@@ -9,7 +9,6 @@ describe('historic', function(){
     before(function() {
         server = require('../../server');
     });
-   
     after(function() {
         mongoose.connection.close();
         server.close();
@@ -25,6 +24,6 @@ describe('historic', function(){
                 .then(function(res) {
                     expect(res.body.length).to.be.equal(30);
                 });
-        });   
+        });
     });
 });

@@ -14,7 +14,6 @@ module.exports = function () {
 
     mongoose.connection.on('disconnected', function () {
         console.log('Mongoose! Disconnected at ' + appSettings.mongoUrl);
-        
     });
 
     mongoose.connection.on('error', function (erro) {
