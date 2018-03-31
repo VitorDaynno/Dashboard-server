@@ -6,4 +6,7 @@ module.exports = function(app) {
 
     app.route('/v1/monthlyExpenses/:form')
         .get(controller.getMonthlyExpenses);
+
+    app.route('/v1/dailyexpenses/:month')
+        .get(controller.getDailyExpenses);
 };

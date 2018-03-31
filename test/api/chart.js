@@ -29,4 +29,14 @@ describe('chart', function(){
                 .expect(200);
         });
     });
+
+    describe('/v1/dailyexpenses/month', function() {
+        it('should return a list of daily expenses', function() {
+            return request(server)
+                .get('/v1/dailyexpenses/201711')
+                .set('Accept', 'application/json')
+                .expect('Content-Type', /json/)
+                .expect(200);
+        });
+    });
 });
