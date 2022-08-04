@@ -14,7 +14,7 @@
     "express": "4.16.2",
     "express-load": "1.1.16",
     "method-override": "2.3.10",
-    "mongoose": "5.0.0-rc1",
+    "mongoose": "5.7.5",
     "winston": "2.4.0"
   },
   "devDependencies": {
