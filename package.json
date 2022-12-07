@@ -11,7 +11,7 @@
   "license": "",
   "repository": "https://github.com/VitorDaynno/Dashboard-server",
   "dependencies": {
-    "express": "4.16.2",
+    "express": "4.17.3",
     "express-load": "1.1.16",
     "method-override": "2.3.10",
     "mongoose": "5.0.0-rc1",
